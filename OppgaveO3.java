@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class OppgaveO3 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Skriv inn et heltall n > 0: ");
+        int n = scanner.nextInt();
+
+        int fakultet = 1;
+
+        for (int i = 1; i <= n; i++) {
+            fakultet = fakultet * i;
+        }
+
+        System.out.println(n + "! = " + fakultet);
+
+        scanner.close();
+    }
+}
